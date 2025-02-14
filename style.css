@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&family=Limelight&family=Sigmar+One&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.bigbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.box {
+    height: auto;
+    width: 450px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px;
+    flex: 1 1 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.one {
+    opacity: 1;
+    filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.one img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.one .smallbox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.one .smallbox h1 {
+    color: gold;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px;
+    border-bottom: 2px solid rgb(179, 179, 179);
+}
+
+.one .text {
+    color: black;
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 5px;
+    word-wrap: break-word;
+    line-height: 1.5;
+    padding: 0 10px;
+    overflow-wrap: break-word;
+    max-height: 150px; 
+    overflow: auto; 
+}
+
+.two {
+    background: linear-gradient(140deg, gold, rgb(7, 7, 7));
+    opacity: 1;
+    filter: blur(4px);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+}
+.two .content{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.imgcontainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic2 {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.b4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.two:hover .b4 {
+    opacity: 1;
+}
+
+.three {
+    background-color: wheat;
+    opacity: 0.2;
+    filter: blur(4px);
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    transition: all 0.3s ease;
+}
+
+.line2 {
+    height: 200px;
+    width: 130px;
+    background-color: gold;
+    margin: 0px 0px 0px 9px;
+}
+
+.yellowline {
+    display: flex;
+    flex-direction: column;
+    margin: 0px -14px 0px 24px;
+}
+
+.name {
+    margin: -18px -2px 0px 19px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: gold;
+    font-family: Limelight;
+}
+
+.surname {
+    margin: -6px 0px 0px 19px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    font-family: Limelight;
+}
+
+.button{
+    
+    background-color: black;
+    color:gold;
+}
+
+.yellowline > a {
+    background-color: black;
+    color: gold;
+}
+
+.rightside {
+    margin: 30px 0px 0px -50px;
+}
+
+.job {
+    margin: 0px 0px 31px 0px;
+}
+
+.profession {
+    font-family: Truculenta;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.clgname {
+    font-family: Truculenta;
+}
+
+.my {
+    margin: 0px 0px 20px 0px;
+    font-family: Truculenta;
+    font-weight: bold;
+    font-size: 40px;
+    color: gold;
+}
+
+.hobbies {
+    margin: 0px 0px 271px 0px;
+}
+
+.insta {
+    margin: -155px 0px 0px 142px;
+}
+
+.Movies {
+    font-family: Truculenta;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.travel {
+    font-family: Truculenta;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.code {
+    font-family: Truculenta;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.music {
+    font-family: Truculenta;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.one:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.two:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.three:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.instagram:hover {
+    transform: scale(1.1);
+}
+
+.linkedin:hover {
+    transform: scale(1.1);
+}
+
+.here button {
+    margin:93px 0px 0px 39px;
+    background-color: black;  
+    color: gold;              
+    border: none;             
+    padding: 10px 20px;      
+    font-size: 16px;        
+    font-weight: bold;        
+    border-radius: 10px;      
+    cursor: pointer;         
+    transition: background-color 0.3s ease; 
+}
+
+.here button:hover {
+    background-color: gold;
+    color: black;             
+}
+
+.here button a {
+    color: inherit;           
+    text-decoration: none;    
+}
+
+@media (max-width: 768px) {
+    .bigbox {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .one img,
+    .two img,
+    .three img {
+        width: 100%;
+        height: auto;
+    }
+
+    .yellowline {
+        margin: 0px 0px 0px 0px;
+        align-items: center;
+    }
+
+    .one .text {
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    .one .smallbox {
+        padding: 15px;
+        height: auto;
+    }
+}
